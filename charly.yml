@@ -12,7 +12,7 @@ fonts-extended:
             workstation wants it. Each family ships as an installed Arch package,
             so its presence is verifiable by querying the package database.
         require:
-            - desktop-fonts
+            - '@github.com/opencharly/layer-desktop-fonts:v2026.237.502'
         distro:
             arch:
                 package:
