@@ -1,7 +1,5 @@
-version: 2026.232.0520
 fonts-extended:
     candy:
-        version: 2026.149.1210
         description: |
             The full CachyOS desktop font set — Noto CJK + emoji, Cantarell, DejaVu, Bitstream Vera, Open Sans, Meslo Nerd, and awesome-terminal glyphs — installed system-wide
             The full CachyOS desktop font set (the netinstall "fonts" subgroup) on
