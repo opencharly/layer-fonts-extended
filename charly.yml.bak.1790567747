@@ -1,5 +1,7 @@
+version: 2026.232.0520
 fonts-extended:
     candy:
+        version: 2026.149.1210
         description: |
             The full CachyOS desktop font set — Noto CJK + emoji, Cantarell, DejaVu, Bitstream Vera, Open Sans, Meslo Nerd, and awesome-terminal glyphs — installed system-wide
             The full CachyOS desktop font set (the netinstall "fonts" subgroup) on
@@ -10,7 +12,7 @@ fonts-extended:
             workstation wants it. Each family ships as an installed Arch package,
             so its presence is verifiable by querying the package database.
         require:
-            - '@github.com/opencharly/layer-desktop-fonts:v2026.239.1629'
+            - '@github.com/opencharly/layer-desktop-fonts:v2026.237.502'
         distro:
             arch:
                 package:
