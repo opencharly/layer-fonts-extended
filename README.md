@@ -49,7 +49,9 @@ fc-list | grep -i 'Noto'     # the rendered families
 ## Related
 
 - Base layer: `layer-desktop-fonts`
-- Family skill: `/charly-selkies:desktop-fonts` — the lean JetBrains Mono + Nerd
+- Owning skill: `/charly-selkies:fonts-extended` — this layer's full CachyOS
+  desktop font set
+- Base skill: `/charly-selkies:desktop-fonts` — the lean JetBrains Mono + Nerd
   Fonts base this candy extends
 - [`opencharly/charly`](https://github.com/opencharly/charly) — the charly CLI and image builder
 - [`opencharly/opencharly`](https://github.com/opencharly/opencharly) — the umbrella
