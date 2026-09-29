@@ -5,27 +5,27 @@ font set (Noto CJK + emoji, Cantarell, DejaVu, Bitstream Vera, Open Sans, Meslo
 Nerd, awesome-terminal glyphs) on top of the lean `desktop-fonts` layer. The
 candy lives in `charly.yml` at the repo root: the `require:` dep on
 `layer-desktop-fonts`, the `arch` package arm, and the package `check:` steps. It
-carries **no `skill:` entity**, so no owning `/charly-<family>:<name>` skill is
-projected into the marketplace corpus.
+carries an owning `fonts-extended-skill:` entity, projected as
+`/charly-selkies:fonts-extended`.
 
 Canonical files:
 
-- `charly.yml` — the `fonts-extended:` candy entity (no `skill:` entity present).
+- `charly.yml` — the `fonts-extended:` candy entity and its `fonts-extended-skill:`
+  skill entity.
 - `.github/workflows/tag-on-merge.yml` — CalVer tag + `CHANGELOG/` on merge.
 - `README.md` — user overview only; never agent guidance.
 
 ## Load these skills first (R0)
 
-- `/charly-selkies:desktop-fonts` — the closest owning skill: the lean JetBrains
-  Mono + Nerd Fonts base this candy extends, and the font-family reference. Load
-  before editing or troubleshooting the layer.
+- `/charly-selkies:fonts-extended` — the owning skill: the full CachyOS desktop
+  font set (Noto CJK + emoji, Cantarell, DejaVu, Bitstream Vera, Open Sans,
+  Meslo Nerd, awesome-terminal glyphs) on top of `desktop-fonts`. Load before
+  editing, building, or troubleshooting the layer.
+- `/charly-selkies:desktop-fonts` — the lean JetBrains Mono + Nerd Fonts base
+  this candy extends, and the font-family reference.
 - `/charly-image:layer` — the candy authoring reference (`charly.yml` schema,
   `plan:` step verbs incl. `check:`, per-distro `distro:` arms, package
   sections). Load before editing any entity field or plan step.
-
-There is no dedicated `/charly-*:fonts-extended` owning skill — this repo's candy
-carries no `skill:` entity. The gap is recorded against
-`opencharly/opencharly#291`; when one is authored, add it here.
 
 ## Build / validate / test
 
